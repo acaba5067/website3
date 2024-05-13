@@ -1,15 +1,15 @@
 
-.icons-web
+ .icons-web
 {
 
-        z-index: 1; 
-         margin-top: -700px;
-         margin-left: 90%;
+        margin-top: 200px;
+        margin-left: 1250px;
 
-}
+} 
 .icons-web a{
          display:block;
-         margin-right: auto;
+
+        
          color:black;
          
          
@@ -71,19 +71,22 @@
 
 }
 
-.line{
+.line::after{
+        position: absolute;
+        content: "";
         height: 2px;
         width: 130px;
         background-color: rgb(0, 200, 255);
-        transform: scale(0.3);
+        transition: 0.2s;
+        opacity: 0;
 }
-.line:hover{
-        transform: scale(1);
+.line:hover::after{
+        opacity: 1;
 
 }
 .line2{
         height: 2px;
-        width:130px;
+        width:100px;
         background-color:darkblue ;
         margin-left: 250px;
         transform: scale(0.2);
